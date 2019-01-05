@@ -1,2 +1,2 @@
-# LEDE-ExtRoot
-LEDE-ExtRoot
+# OpenWRT-ExtRoot
+OpenWRT-ExtRoot
