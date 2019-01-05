@@ -9,8 +9,11 @@ Install Packages:
 Find the name of your flash drive with the : block info
 	
 	block info
-		/dev/mtdblock2: UUID="20ad40ea-d33a421e-785b7d2d-ada99230" VERSION="4.0" TYPE="squashfs" /dev/mtdblock3: TYPE="jffs2"
-		/dev/sda1: UUID="9fa36631-ac09-42a0-b090-f61efe6c1bfb" NAME="EXT_USB" VERSION="1.0" TYPE="ext4" 
+	
+This will return something like:
+
+	/dev/mtdblock2: UUID="20ad40ea-d33a421e-785b7d2d-ada99230" VERSION="4.0" TYPE="squashfs" /dev/mtdblock3: TYPE="jffs2"
+	/dev/sda1: UUID="9fa36631-ac09-42a0-b090-f61efe6c1bfb" NAME="EXT_USB" VERSION="1.0" TYPE="ext4" 
 
 Create a directory and mount your device on it:
 	
