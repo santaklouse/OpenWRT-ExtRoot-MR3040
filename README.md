@@ -29,21 +29,21 @@ Edit /etc/config/fstab file :
 	option from_fstab 1
 	option anon_mount 1
 
-config global autoswap
-  option from_fstab 1
-  option anon_swap 0
+	config global autoswap
+  	option from_fstab 1
+  	option anon_swap 0
 
-config mount
-  option target   /
-  option device   /dev/sda1
-  option fstype   ext4
-  option options  rw,sync
-  option enabled  1
-  option enabled_fsck 0
+	config mount
+  	option target   /
+  	option device   /dev/sda1
+  	option fstype   ext4
+  	option options  rw,sync
+  	option enabled  1
+  	option enabled_fsck 0
 
 Enable and Start fstab : 
-root@OpenWrt:~# /etc/init.d/fstab enable
-root@OpenWrt:~# /etc/init.d/fstab start
+	/etc/init.d/fstab enable
+	/etc/init.d/fstab start
 
 Restart the router : 
 	reboot -f
